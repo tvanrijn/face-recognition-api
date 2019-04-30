@@ -17,7 +17,7 @@ const handleClarifai = (req, res) => {
     })
 }
 
-const handleImage = (req, res, database) => {
+const handleImageCount = (req, res, database) => {
     const { id } = req.body;
 
     database('users')
@@ -39,6 +39,6 @@ const handleImage = (req, res, database) => {
 }
 
 module.exports = {
-    handleImage: handleImage,
+    handleImageCount: handleImageCount,
     handleClarifai: handleClarifai
 }

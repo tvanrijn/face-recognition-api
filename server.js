@@ -47,8 +47,8 @@ app.get('/profile/:id', (req, res) => {
     )
 })
 
-app.put('/image', (req, res) => {
-    image.handleImage(
+app.put('/imagecount', (req, res) => {
+    image.handleImageCount(
         req,
         res,
         database
